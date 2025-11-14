@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .song-info {
+            flex: 1;
+        }
+        .song-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .album-name {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Playlist</h1>
+    <ul>
+        <li>
+            <input type="checkbox" id="song1">
+            <div class="song-info">
+                <div class="song-title">Styx – Crash of the Crown</div>
+                <div class="album-name">Album: Crash of the Crown (2021)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song2">
+            <div class="song-info">
+                <div class="song-title">Jamiroquai – Automaton</div>
+                <div class="album-name">Album: Automaton (2017)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song3">
+            <div class="song-info">
+                <div class="song-title">INXS – Original Sin</div>
+                <div class="album-name">Album: The Swing (1984)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song4">
+            <div class="song-info">
+                <div class="song-title">Sade – The Sweetest Taboo</div>
+                <div class="album-name">Album: Promise (1985)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song5">
+            <div class="song-info">
+                <div class="song-title">Bill Withers & Grover Washington Jr – Just the Two of Us</div>
+                <div class="album-name">Album: Winelight (1980)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song6">
+            <div class="song-info">
+                <div class="song-title">Luther Vandross – Never Too Much</div>
+                <div class="album-name">Album: Never Too Much (1981)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song7">
+            <div class="song-info">
+                <div class="song-title">Taylor Swift & Ed Sheeran – Everything Has Changed</div>
+                <div class="album-name">Album: Red (2012)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song8">
+            <div class="song-info">
+                <div class="song-title">Crowded House – Fall at Your Feet</div>
+                <div class="album-name">Album: Woodface (1991)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song9">
+            <div class="song-info">
+                <div class="song-title">Kate Bush – This Woman's Work</div>
+                <div class="album-name">Album: The Sensual World (1989)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song10">
+            <div class="song-info">
+                <div class="song-title">Genesis – In Too Deep</div>
+                <div class="album-name">Album: Invisible Touch (1986)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song11">
+            <div class="song-info">
+                <div class="song-title">Spandau Ballet – True</div>
+                <div class="album-name">Album: True (1983)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song12">
+            <div class="song-info">
+                <div class="song-title">Calexico – Sunken Waltz</div>
+                <div class="album-name">Album: Feast of Wire (2003)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song13">
+            <div class="song-info">
+                <div class="song-title">Blondie – Rapture</div>
+                <div class="album-name">Album: Autoamerican (1980)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song14">
+            <div class="song-info">
+                <div class="song-title">London Grammar – Strong</div>
+                <div class="album-name">Album: If You Wait (2013)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song15">
+            <div class="song-info">
+                <div class="song-title">Tina Turner – We Don't Need Another Hero</div>
+                <div class="album-name">Album: Mad Max Beyond Thunderdome (1985)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song16">
+            <div class="song-info">
+                <div class="song-title">Elton John – I Guess That's Why They Call It the Blues</div>
+                <div class="album-name">Album: Too Low for Zero (1983)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song17">
+            <div class="song-info">
+                <div class="song-title">Sam Brown – Stop</div>
+                <div class="album-name">Album: Stop! (1988)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song18">
+            <div class="song-info">
+                <div class="song-title">Miley Cyrus – Jolene</div>
+                <div class="album-name">Album: Backyard Sessions (2012)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song19">
+            <div class="song-info">
+                <div class="song-title">Missy Higgins – Where I Stood</div>
+                <div class="album-name">Album: On a Clear Night (2007)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song20">
+            <div class="song-info">
+                <div class="song-title">Kylie Minogue & Nick Cave – Where the Wild Roses Grow</div>
+                <div class="album-name">Album: Murder Ballads (1996)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song21">
+            <div class="song-info">
+                <div class="song-title">Art Garfunkel – Bright Eyes</div>
+                <div class="album-name">Album: Fate for Breakfast (1979)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song22">
+            <div class="song-info">
+                <div class="song-title">Wendy Matthews – The Day You Went Away</div>
+                <div class="album-name">Album: Émigré (1990)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song23">
+            <div class="song-info">
+                <div class="song-title">Del Amitri – Nothing Ever Happens</div>
+                <div class="album-name">Album: Waking Hours (1989)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song24">
+            <div class="song-info">
+                <div class="song-title">The Cardigans – Sick & Tired</div>
+                <div class="album-name">Album: Gran Turismo (1998)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song25">
+            <div class="song-info">
+                <div class="song-title">Mike & The Mechanics – Over My Shoulder</div>
+                <div class="album-name">Album: Beggar on a Beach of Gold (1995)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song26">
+            <div class="song-info">
+                <div class="song-title">Earth, Wind & Fire – After the Love Has Gone</div>
+                <div class="album-name">Album: I Am (1979)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song27">
+            <div class="song-info">
+                <div class="song-title">Yazoo – Only You</div>
+                <div class="album-name">Album: Upstairs at Eric's (1982)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song28">
+            <div class="song-info">
+                <div class="song-title">Lionel Richie – Time</div>
+                <div class="album-name">Album: Time (1998)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song29">
+            <div class="song-info">
+                <div class="song-title">Lighthouse Family – What You Won't Do for Love</div>
+                <div class="album-name">Album: Postcards from Heaven (1997)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song30">
+            <div class="song-info">
+                <div class="song-title">Annie Lennox – I Put a Spell on You</div>
+                <div class="album-name">Album: Medusa (1995)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song31">
+            <div class="song-info">
+                <div class="song-title">Phil Collins – Another Day in Paradise</div>
+                <div class="album-name">Album: ...But Seriously (1989)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song32">
+            <div class="song-info">
+                <div class="song-title">Robert Plant – Darkness, Darkness</div>
+                <div class="album-name">Album: Dreamland (2002)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song33">
+            <div class="song-info">
+                <div class="song-title">Chris de Burgh – Patricia the Stripper</div>
+                <div class="album-name">Album: Spanish Train and Other Stories (1975)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song34">
+            <div class="song-info">
+                <div class="song-title">Macy Gray – I Try</div>
+                <div class="album-name">Album: On How Life Is (1999)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song35">
+            <div class="song-info">
+                <div class="song-title">John Waite – Missing You</div>
+                <div class="album-name">Album: No Brakes (1984)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song36">
+            <div class="song-info">
+                <div class="song-title">Alex Lloyd – Amazing</div>
+                <div class="album-name">Album: Black the Sun (1999)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song37">
+            <div class="song-info">
+                <div class="song-title">Roger Waters – Amused to Death</div>
+                <div class="album-name">Album: Amused to Death (1992)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song38">
+            <div class="song-info">
+                <div class="song-title">David Bowie – Fame 90</div>
+                <div class="album-name">Album: Fame 90 (Single, 1990)</div>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" id="song39">
+            <div class="song-info">
+                <div class="song-title">Bon Jovi – This Left Feels Right</div>
+                <div class="album-name">Album: This Left Feels Right (2003)</div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
